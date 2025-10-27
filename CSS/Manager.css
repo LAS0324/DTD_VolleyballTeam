@@ -100,7 +100,7 @@ nav ul li a:hover {
     margin-bottom: 50px;
 }
 
-.Players-Title {
+.Manager-Title {
     font-size: 4rem;
     font-weight: bold;
 }
@@ -118,7 +118,7 @@ nav ul li a:hover {
 .main-photo {
     width: 300px;
     height: 400px;
-    background-color: #2d223b;
+    background-color: #3b2222;
     border-radius: 20px;
     display: flex;
     justify-content: center;
@@ -132,11 +132,12 @@ nav ul li a:hover {
     border-radius: 20px;
 }
 
+
 /* Footer */
 .footer-Layout {
     height: 300px;
     width: 100%;
-    background-color: #9595B5;
+    background-color: #4D5D75;
     text-align: center;
     padding: 50px 200px;
     margin-top: 200px;

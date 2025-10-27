@@ -70,20 +70,20 @@ nav ul li a:hover {
     color: #007bff;
 }
 
-.shrink {
+.nav-shrink {
     padding: 5px 0;
 }
 
-.shrink .nav-LayoutContainer {
+.nav-shrink .nav-LayoutContainer {
     padding: 5px 30px;
 }
 
-.shrink .nav-ImgLogo {
+.nav-shrink .nav-ImgLogo {
     width: 60px; 
     height: 60px;
 }
 
-.shrink nav ul li {
+.nav-shrink nav ul li {
     font-size: 1rem; 
     width: 80px;
 }
