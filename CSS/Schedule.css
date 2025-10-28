@@ -93,13 +93,13 @@ nav ul li a:hover {
 }
 
 /* Main */
-.Title-layout {
+.main-Title-layout {
     text-align: center;
     margin-top: 150px;
     margin-bottom: 50px;
 }
 
-.Schedule-Title {
+.main-Schedule-Title {
     font-size: 4rem;
     font-weight: bold;
 }

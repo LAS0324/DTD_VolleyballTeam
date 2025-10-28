@@ -94,13 +94,13 @@ nav ul li a:hover {
 
 
 /* Main */
-.Title-layout {
+.main-Title-layout {
     text-align: center;
     margin-top: 150px;
     margin-bottom: 50px;
 }
 
-.Manager-Title {
+.main-Manager-Title {
     font-size: 4rem;
     font-weight: bold;
 }
@@ -123,6 +123,24 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.main-photo-name {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 2rem;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.main-photo-name h2 {
+    font-weight: normal;
 }
 
 .main-photo img {
