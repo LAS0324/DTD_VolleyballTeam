@@ -125,8 +125,12 @@ nav ul li a:hover {
     align-items: center;
     position: relative;
     overflow: hidden;
+    transition: all 0.2s ease;
 }
 
+.main-photo:hover{
+    transform: scale(1.1);
+}
 .main-photo-name {
     position: absolute;
     left: 0;
