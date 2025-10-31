@@ -12,8 +12,8 @@ html {
 body {
     font-family: 'Noto Sans TC', Arial, sans-serif;
     line-height: 1.6;
-    background-color: #b3accd;
-    color: #333333;
+    background-color: #F2EAD7;
+    color: #1C0D0D;
 }
 
 .container {
@@ -24,7 +24,7 @@ body {
 
 /* Header */
 header {
-    background-color: #f8f8f8;
+    background-color: rgb(255, 254, 248);
     padding: 10px 0;
     transition: all 0.3s ease;
 }
@@ -38,7 +38,7 @@ header {
     width: 100%;
     top: 0;
     z-index: 100;
-    background-color: #FFFFFF;
+    background-color: rgb(255, 254, 248);
     padding: 10px 50px;
     transition: all 0.3s ease;
     margin-bottom: 50px;
@@ -66,12 +66,12 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #000000;
+    color: #1C0D0D;
     font-weight: bold;
 }
 
 nav ul li a:hover {
-    color: #007bff;
+    color: #C69455;
 }
 
 .shrink {
@@ -113,12 +113,15 @@ nav ul li a:hover {
     align-items: center;
     padding: 20px;
     margin-top: 100px;
+    text-align: center;
 }
+
 
 .main-photo {
     width: 300px;
     height: 400px;
-    background-color: #2d223b;
+    opacity: 1;
+    background-color: #C69455;
     border-radius: 20px;
     display: flex;
     justify-content: center;
@@ -126,12 +129,125 @@ nav ul li a:hover {
     margin: 10px;
     position: relative;
     overflow: hidden;
-    transition: all 0.2s ease;
+    transition: all 0.3s linear;
 }
 
-.main-photo:hover{
+.main-photo-ZoomIn{
+    transition: all 0.3s linear;
+}
+
+.main-photo-ZoomIn:hover{
     transform: scale(1.1);
 }
+
+.main-photo.new {
+    opacity: 1;
+}
+
+.opacity-back{
+    opacity: 1;
+}
+
+.main-photo-animation1{
+    animation-name: photo1-up;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+    
+}
+
+.main-photo-animation2{
+    transition: all 0.3s ease;
+    animation-name: photo2-up;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+    animation-delay: 0.3s;
+}
+.main-photo-animation3{
+    transition: all 0.3s ease;
+    animation-name: photo3-up;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+    animation-delay: 0.5s;
+}
+.main-photo-animation4{
+    transition: all 0.3s ease;
+    animation-name: photo4-up;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+    animation-delay: 0.7s;
+}
+.main-photo-animation5{
+    transition: all 0.3s ease;
+    animation-name: photo5-up;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+    animation-delay: 0.9s;
+}
+/* .main-photo-animation6{
+    transition: all 0.3s ease;
+    animation-name: photo5-up;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+    animation-delay: 0.3s;
+}
+.main-photo-animation7{
+    transition: all 0.3s ease;
+    animation-name: photo5-up;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+.main-photo-animation8{
+    transition: all 0.3s ease;
+    animation-name: photo5-up;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+.main-photo-animation9{
+    transition: all 0.3s ease;
+    animation-name: photo5-up;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+.main-photo-animation10{
+    transition: all 0.3s ease;
+    animation-name: photo5-up;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.7s;
+}
+.main-photo-animation11{
+    transition: all 0.3s ease;
+    animation-name: photo5-up;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.7s;
+}
+.main-photo-animation12{
+    transition: all 0.3s ease;
+    animation-name: photo5-up;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.7s;
+}
+.main-photo-animation13{
+    transition: all 0.3s ease;
+    animation-name: photo5-up;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.9s;
+}
+.main-photo-animation14{
+    transition: all 0.3s ease;
+    animation-name: photo5-up;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.9s;
+} */
+
+
 
 
 
@@ -155,6 +271,7 @@ nav ul li a:hover {
     font-size: 2rem;
     padding: 10px 0;
     text-align: center;
+    z-index: 100;
 }
 
 .main-photo-CapName{
@@ -206,7 +323,7 @@ nav ul li a:hover {
 .footer-Layout {
     height: 300px;
     width: 100%;
-    background-color: #9595B5;
+    background-color: #1C0D0D;
     text-align: center;
     padding: 50px 200px;
     margin-top: 200px;
@@ -219,7 +336,7 @@ nav ul li a:hover {
 .footer-ImgLogo {
     width: 300px;
     height: 200px;
-    background-color: #333;
+    background-color: #C69455;
 }
 
 .footer-Text1-Layout {
@@ -227,7 +344,7 @@ nav ul li a:hover {
 }
 
 .footer-Title1 {
-    color: #FFFFFF;
+    color: #F2EAD7;
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 20px;
@@ -237,16 +354,85 @@ footer .footer-Layout ul {
     list-style: none;
     padding: 0;
     font-size: 2rem;
-    color: #FFFFFF;
+    color: #F2EAD7;
 }
 
 footer .footer-Layout ul li a {
     text-decoration: none;
-    color: #FFFFFF;
+    color: #F2EAD7;
 }
 
 .footer-Text2-Layout {
     text-align: left;
     display: inline-block;
     vertical-align: top;
+}
+
+
+/* keyframes */
+
+/* main photo 1~3 */
+@keyframes photo1-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) none;
+        color: #1C0D0D;
+        
+    }
+}
+
+/* main photo 4~6 */
+@keyframes photo2-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        color: #1C0D0D;
+    }
+}
+
+/* main photo 7~9 */
+@keyframes photo3-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        color: #1C0D0D;
+    }
+}
+
+/* main photo 10~12 */
+@keyframes photo4-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        color: #1C0D0D;
+    }
+}
+
+/* main photo 13~14 */
+@keyframes photo5-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        color: #1C0D0D;
+    }
 }
