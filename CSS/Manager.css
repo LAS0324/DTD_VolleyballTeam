@@ -12,8 +12,8 @@ html {
 body {
     font-family: 'Noto Sans TC', Arial, sans-serif;
     line-height: 1.6;
-    background-color: #b3accd;
-    color: #333333;
+    background-color: #F2EAD7;
+    color: #1C0D0D;
 }
 
 .container {
@@ -24,7 +24,7 @@ body {
 
 /* Header */
 header {
-    background-color: #f8f8f8;
+    background-color: rgb(255, 254, 248);
     padding: 10px 0;
     transition: all 0.3s ease;
 }
@@ -37,11 +37,10 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 100;
-    background-color: #FFFFFF;
+    z-index: 1000;
+    background-color: rgb(255, 254, 248);
     padding: 10px 50px;
     transition: all 0.3s ease;
-    margin-bottom: 50px;
 }
 
 .nav-ImgLogo {
@@ -66,12 +65,12 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #000000;
+    color: #1C0D0D;
     font-weight: bold;
 }
 
 nav ul li a:hover {
-    color: #007bff;
+    color: #C69455;
 }
 
 .shrink {
@@ -93,16 +92,21 @@ nav ul li a:hover {
 }
 
 
+
 /* Main */
 .main-Title-layout {
     text-align: center;
     margin-top: 150px;
     margin-bottom: 50px;
+    transition: all 0.3s ease;
 }
 
 .main-Manager-Title {
     font-size: 4rem;
     font-weight: bold;
+    animation-name: text-up;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
 .main-grid-layout {
@@ -118,29 +122,56 @@ nav ul li a:hover {
 .main-photo {
     width: 300px;
     height: 400px;
-    background-color: #3b2222;
+    opacity: 1;
+    background-color: #C69455;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 10px;
     position: relative;
     overflow: hidden;
-    transition: all 0.2s ease;
+    transition: all 0.3s linear;
+}
+
+.main-photo-ZoomIn{
+    transition: all 0.3s linear;
+}
+
+.main-photo-ZoomIn:hover{
+    transform: scale(1.1);
+}
+
+.main-photo-animation1{
+    animation-name: photo1-up;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+    animation-delay: 0.3s;
+}
+
+.main-photo-animation2{
+    transition: all 0.3s ease;
+    animation-name: photo2-up;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+    animation-delay: 0.5s;
 }
 
 .main-photo:hover{
     transform: scale(1.1);
 }
+
 .main-photo-name {
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
+    background-color: #1C0D0D;
+    color: #F2EAD7;
     font-size: 2rem;
     padding: 10px 0;
     text-align: center;
+    z-index: 100;
 }
 
 .main-photo-name h2 {
@@ -159,7 +190,7 @@ nav ul li a:hover {
 .footer-Layout {
     height: 300px;
     width: 100%;
-    background-color: #4D5D75;
+    background-color: #1C0D0D;
     text-align: center;
     padding: 50px 200px;
     margin-top: 200px;
@@ -172,7 +203,7 @@ nav ul li a:hover {
 .footer-ImgLogo {
     width: 300px;
     height: 200px;
-    background-color: #333;
+    background-color: #C69455;
 }
 
 .footer-Text1-Layout {
@@ -180,7 +211,7 @@ nav ul li a:hover {
 }
 
 .footer-Title1 {
-    color: #FFFFFF;
+    color: #F2EAD7;
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 20px;
@@ -190,16 +221,59 @@ footer .footer-Layout ul {
     list-style: none;
     padding: 0;
     font-size: 2rem;
-    color: #FFFFFF;
+    color: #F2EAD7;
 }
 
 footer .footer-Layout ul li a {
     text-decoration: none;
-    color: #FFFFFF;
+    color: #F2EAD7;
 }
 
 .footer-Text2-Layout {
     text-align: left;
     display: inline-block;
     vertical-align: top;
+}
+
+
+/* keyframes */
+
+/* main-Manager-Title */
+@keyframes text-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        color: #1C0D0D;
+    }
+}
+
+/* main photo 1~3 */
+@keyframes photo1-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) none;
+        color: #1C0D0D;
+        
+    }
+}
+
+/* main photo 4~6 */
+@keyframes photo2-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        color: #1C0D0D;
+    }
 }

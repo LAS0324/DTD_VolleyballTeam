@@ -34,7 +34,7 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 100;
+    z-index: 1000;
     background-color: rgb(255, 254, 248);
     padding: 10px 50px;
     transition: all 0.3s ease;
@@ -112,13 +112,13 @@ nav ul li a:hover {
     animation-name: Subtitle-text-up;
     animation-duration: 1s;
     animation-fill-mode: forwards;
-    animation-delay: 0.5s;
+    animation-delay: 0.3s;
 }
 
 /* Hero Section */
 .section-hero{
     background: url('../images/hero-bg.jpg') no-repeat center center/cover;
-    height: 700px;
+    height: 900px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -135,7 +135,7 @@ nav ul li a:hover {
     background-color: #C69455;
     border-radius: 20px;
     overflow: hidden;
-    
+    box-shadow: 5px 5px 10px 5px #9A9590, -5px 0px 10px 5px #9A9590;
 }
 .section-Title1-Layout{
     height: 140px;
@@ -153,7 +153,7 @@ nav ul li a:hover {
 .section-Title1{
     color: #F2EAD7;
     font-size: 4rem;
-    font-weight: bold;
+    font-weight: bolder;
     text-align: center;
     
 }
@@ -184,7 +184,7 @@ nav ul li a:hover {
 }
 .section-TeamIntro-Competitive{
     font-size: 4rem;
-    font-weight: bold;
+    font-weight:bold;
     line-height: 1.6;
     text-align: left;
     color: #F2EAD7;
@@ -205,10 +205,11 @@ nav ul li a:hover {
     list-style-type: disc ;
     padding-left: 20px;
     line-height: 1.5;
+    
 }
 .section-TeamIntro ul li{
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: normal;
     margin-bottom: 10px;
     color: #F2EAD7;
 }
@@ -250,6 +251,7 @@ nav ul li a:hover {
     background-color: #C69455;
     overflow: hidden;
     border-radius: 20px;
+    box-shadow: 5px 5px 10px 5px #aaaaaa, -5px 0px 10px 5px #aaaaaa;
 }
 .section-PracTime-Background{
     height: 140px;

@@ -8,3 +8,10 @@ window.addEventListener("scroll", function () {
     }
 });
 
+// const Change = document.querySelector(".main-score-background");
+// const Week1 = document.querySelector(".main-Schedule-week1");
+// const NewText = document.createElement("p");
+
+// Change.addEventListener("click", function(){
+//     Change.classList.remove("");
+// });

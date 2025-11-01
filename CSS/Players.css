@@ -37,11 +37,10 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 100;
+    z-index: 1000;
     background-color: rgb(255, 254, 248);
     padding: 10px 50px;
     transition: all 0.3s ease;
-    margin-bottom: 50px;
 }
 
 .nav-ImgLogo {
@@ -98,11 +97,15 @@ nav ul li a:hover {
     text-align: center;
     margin-top: 150px;
     margin-bottom: 50px;
+    transition: all 0.3s ease;
 }
 
 .main-Players-Title {
     font-size: 4rem;
     font-weight: bold;
+    animation-name: text-up;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
 .main-grid-layout {
@@ -132,27 +135,27 @@ nav ul li a:hover {
     transition: all 0.3s linear;
 }
 
-.main-photo-ZoomIn{
+/* .main-photo-ZoomIn{
     transition: all 0.3s linear;
 }
 
 .main-photo-ZoomIn:hover{
     transform: scale(1.1);
-}
+} */
 
-.main-photo.new {
+/* .main-photo.new {
     opacity: 1;
 }
 
 .opacity-back{
     opacity: 1;
-}
+} */
 
 .main-photo-animation1{
     animation-name: photo1-up;
     animation-duration: 1s;
     animation-fill-mode: backwards;
-    
+    animation-delay: 0.3s;
 }
 
 .main-photo-animation2{
@@ -160,105 +163,33 @@ nav ul li a:hover {
     animation-name: photo2-up;
     animation-duration: 1s;
     animation-fill-mode: backwards;
-    animation-delay: 0.3s;
+    animation-delay: 0.5s;
 }
 .main-photo-animation3{
     transition: all 0.3s ease;
     animation-name: photo3-up;
     animation-duration: 1s;
     animation-fill-mode: backwards;
-    animation-delay: 0.5s;
+    animation-delay: 0.7s;
 }
 .main-photo-animation4{
     transition: all 0.3s ease;
     animation-name: photo4-up;
     animation-duration: 1s;
     animation-fill-mode: backwards;
-    animation-delay: 0.7s;
+    animation-delay: 0.9s;
 }
 .main-photo-animation5{
     transition: all 0.3s ease;
     animation-name: photo5-up;
     animation-duration: 1s;
     animation-fill-mode: backwards;
-    animation-delay: 0.9s;
+    animation-delay: 1.1s;
 }
-/* .main-photo-animation6{
-    transition: all 0.3s ease;
-    animation-name: photo5-up;
-    animation-duration: 1s;
-    animation-fill-mode: backwards;
-    animation-delay: 0.3s;
-}
-.main-photo-animation7{
-    transition: all 0.3s ease;
-    animation-name: photo5-up;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-delay: 0.5s;
-}
-.main-photo-animation8{
-    transition: all 0.3s ease;
-    animation-name: photo5-up;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-delay: 0.5s;
-}
-.main-photo-animation9{
-    transition: all 0.3s ease;
-    animation-name: photo5-up;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-delay: 0.5s;
-}
-.main-photo-animation10{
-    transition: all 0.3s ease;
-    animation-name: photo5-up;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-delay: 0.7s;
-}
-.main-photo-animation11{
-    transition: all 0.3s ease;
-    animation-name: photo5-up;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-delay: 0.7s;
-}
-.main-photo-animation12{
-    transition: all 0.3s ease;
-    animation-name: photo5-up;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-delay: 0.7s;
-}
-.main-photo-animation13{
-    transition: all 0.3s ease;
-    animation-name: photo5-up;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-delay: 0.9s;
-}
-.main-photo-animation14{
-    transition: all 0.3s ease;
-    animation-name: photo5-up;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-delay: 0.9s;
-} */
 
 
-
-
-
-@keyframes photo-shrink{
-    from {
-        transform: scale(1.1);
-        
-    }
-    to {
-        transform: scale(1.0);
-    }
+.main-photo:hover{
+    transform: scale(1.1);
 }
 
 .main-photo-name {
@@ -266,8 +197,8 @@ nav ul li a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
+    background-color: #1C0D0D;
+    color: #F2EAD7;
     font-size: 2rem;
     padding: 10px 0;
     text-align: center;
@@ -279,8 +210,8 @@ nav ul li a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
+    background-color: #1C0D0D;
+    color: #F2EAD7;
     font-size: 2rem;
     padding: 10px 0;
     text-align: center;
@@ -300,7 +231,7 @@ nav ul li a:hover {
 
 .main-CapBar{
     width: 100%;
-    border: #ffffff 1px solid;
+    border: #F2EAD7 1px solid;
 }
 
 .main-photo-CapName h2{
@@ -370,6 +301,19 @@ footer .footer-Layout ul li a {
 
 
 /* keyframes */
+
+/* main-Players-Title */
+@keyframes text-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        color: #1C0D0D;
+    }
+}
 
 /* main photo 1~3 */
 @keyframes photo1-up {
