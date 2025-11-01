@@ -45,7 +45,7 @@ header {
 }
 
 .nav-ImgLogo {
-    width: 90px;
+    width: 150px;
     height: 90px;
     transition: all 0.3s ease;
 }
@@ -99,17 +99,21 @@ nav ul li a:hover {
     margin-top: 150px;
     margin-bottom: 50px;
     text-align: center;
+    transition: all 0.3s ease;
 }
 
-.main-Title-layout h2{
+/* .main-Title-layout h2{
     width: 100px;
     font-size: 2rem;
     font-weight: bold;
-}
+} */
 
 .main-Schedule-Title{
     font-size: 4rem;
     font-weight: bold;
+    animation-name: text-up;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
 /* .main-score-background{
@@ -161,25 +165,25 @@ nav ul li a:hover {
     animation-name: Bar-up2;
     animation-duration: 1s;
     animation-fill-mode: backwards;
-    animation-delay: 0.5s;
+    animation-delay: 0.3s;
 }
 .main-Schedule-background-animation3{
     animation-name: Bar-up3;
     animation-duration: 1s;
     animation-fill-mode: backwards;
-    animation-delay: 1s;
+    animation-delay: 0.5s;
 }
 .main-Schedule-background-animation4{
     animation-name: Bar-up4;
     animation-duration: 1s;
     animation-fill-mode: backwards;
-    animation-delay: 1.5s;
+    animation-delay: 0.7s;
 }
 .main-Schedule-background-animation5{
     animation-name: Bar-up5;
     animation-duration: 1s;
     animation-fill-mode: backwards;
-    animation-delay: 2s;
+    animation-delay: 0.9s;
 }
 
 .main-Schedule-VSarea {
@@ -226,10 +230,13 @@ nav ul li a:hover {
     align-items: flex-start;
 }
 
+.footer-Layout a:hover{
+    color:#C69455;
+}
+
 .footer-ImgLogo {
     width: 300px;
     height: 200px;
-    background-color: #C69455;
 }
 
 .footer-Text1-Layout {
@@ -262,6 +269,20 @@ footer .footer-Layout ul li a {
 }
 
 /* keyframes */
+
+/* main-Schedule-Title */
+@keyframes text-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        color: #1C0D0D;
+    }
+}
+
 
 /* main-Schedule-background*/
 @keyframes Bar-up1 {

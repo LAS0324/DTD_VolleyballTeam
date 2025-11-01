@@ -42,7 +42,7 @@ header {
 }
 
 .nav-ImgLogo {
-    width: 90px;
+    width: 150px;
     height: 90px;
     transition: all 0.3s ease;
 }
@@ -289,10 +289,14 @@ nav ul li a:hover {
     justify-content: space-around;
     align-items: flex-start;
 }
+
+.footer-Layout a:hover{
+    color:#C69455;
+}
+
 .footer-ImgLogo {
     width: 300px;
     height: 200px;
-    background-color: #C69455;
 }
 .footer-Text1-Layout {
     text-align: left;
