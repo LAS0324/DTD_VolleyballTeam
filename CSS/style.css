@@ -125,9 +125,14 @@ nav ul li a:hover {
     background-color: #333333;
     color: #1c0d0d;
     text-align: center;
+    overflow: hidden;
     /* border-radius: 40px; */
 }
 
+.section-hero-img{
+    width: 100%;
+    height: auto;
+}
 /* Team-Introduction*/
 .section-TeamIntro{
     margin-top: 50px;
