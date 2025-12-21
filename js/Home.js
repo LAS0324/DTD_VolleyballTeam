@@ -122,3 +122,34 @@ document.addEventListener('DOMContentLoaded', () => {
     createPagination(); 
     updateCarousel(true);
 });
+
+/*漢堡選單*/
+document.addEventListener('DOMContentLoaded', () => {
+    // --- 漢堡選單邏輯 ---
+    const menuToggle = document.getElementById('mobile-menu');
+    const navList = document.querySelector('.nav-list');
+    const dropdownItem = document.querySelector('.nav-dropdown-item');
+    const dropdownLink = dropdownItem.querySelector('a'); 
+    
+    dropdownLink.addEventListener('click', function(e) {
+    if (window.innerWidth <= 1199) {
+        e.preventDefault(); // 阻止跳轉
+        e.stopPropagation(); // 阻止事件冒泡到父層
+        
+        // 切換 active 類別：如果有就移除，沒有就加上
+        dropdownItem.classList.toggle('active');
+        
+        // 可選：如果你希望點擊其他地方會收起，可以在這裡處理
+        console.log("手機版下拉選單狀態：", dropdownItem.classList.contains('active'));
+    }
+});
+    if (menuToggle) {
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navList.classList.toggle('active');
+        });
+    }
+    
+
+    // --- 原有的輪播器代碼 ... ---
+});

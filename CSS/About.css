@@ -3,11 +3,13 @@
     margin: 0;
     box-sizing: border-box;
 }
-html{
+
+html {
     font-size: 100%;
     scroll-behavior: smooth;
 }
-body{
+
+body {
     font-family: 'Noto Sans TC', Arial, sans-serif;
     line-height: 1.6;
     background-color: #edf6ff;
@@ -15,6 +17,7 @@ body{
 }
 
 .container {
+    width: 100%;
     margin: auto;
     /* overflow: hidden; */
 }
@@ -23,7 +26,7 @@ body{
 header {
     background-color: rgb(255, 254, 248);
     padding: 10px 0;
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
 }
 
 /* Nav*/
@@ -39,13 +42,15 @@ header {
     padding: 10px 0;
     transition: all 0.3s ease;
 }
-.nav-ContentContainer{
+
+.nav-ContentContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 80%;
     margin: auto;
 }
+
 .nav-ImgLogo {
     width: 150px;
     height: 90px;
@@ -59,9 +64,9 @@ nav ul {
     transition: all 0.3s ease;
 }
 
-nav ul a{
+nav ul a {
     text-decoration: none;
-    color:#fefdff;
+    color: #fefdff;
     font-weight: bold;
     display: block;
     padding: 10px;
@@ -73,7 +78,8 @@ nav ul li {
     padding: 10px;
     transition: all 0.3s ease;
 }
-.nav-li-width{
+
+.nav-li-width {
     padding: 10px;
 }
 
@@ -81,17 +87,19 @@ nav ul li {
 nav ul li a:hover {
     color: #8FABD4;
 }
+
 nav ul a:hover {
     color: #8FABD4;
 }
 
-.nav-dropdown-item{
+.nav-dropdown-item {
     position: relative;
 }
-.nav-dropdown-item > a:after {
+
+.nav-dropdown-item>a:after {
     content: " \25BE";
     font-size: 0.8em;
-    margin-left: 5px; 
+    margin-left: 5px;
     display: inline-block;
 }
 
@@ -99,12 +107,12 @@ nav ul a:hover {
     position: absolute;
     top: 100%;
     left: 0;
-    
+
     background-color: #163e67;
     min-width: 100px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1001;
-    
+
     display: none;
     flex-direction: column;
     padding: 0;
@@ -123,6 +131,7 @@ nav ul a:hover {
     display: block;
     text-align: left;
 }
+
 .nav-dropdown-item:hover .nav-dropdown-content {
     display: flex;
 }
@@ -138,25 +147,27 @@ nav ul a:hover {
 }
 
 .nav-shrink .nav-ImgLogo {
-    width: 60px; 
+    width: 60px;
     height: 60px;
 }
 
-.nav-shrink nav ul li { 
+.nav-shrink nav ul li {
     font-size: 1.3rem;
 }
+
 .nav-shrink .nav-li-width {
-    font-size: 1.75rem; 
+    font-size: 1.75rem;
     width: auto;
     white-space: nowrap;
     font-size: 1.3rem;
 }
+
 .nav-shrink .nav-dropdown-content li {
     font-size: 0.8rem;
 }
 
 /* Main */
-.main-Title-ColorLayout{
+.main-Title-ColorLayout {
     height: 40vh;
     width: 100%;
     background-color: #4A70A9;
@@ -165,12 +176,13 @@ nav ul a:hover {
     align-items: center;
     padding-top: 100px;
 }
+
 .main-Title-layout {
     text-align: center;
     transition: all 0.3s ease;
     background-color: #4A70A9;
     color: #FFFFFF;
-    
+
 }
 
 /* .main-Title-layout h2{
@@ -179,15 +191,17 @@ nav ul a:hover {
     font-weight: bold;
 } */
 
-.main-Schedule-Title{
+.main-Schedule-Title {
     font-size: 4rem;
     font-weight: bold;
     animation-name: text-up;
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
-.section-hero{
-    background: no-repeat center center/cover;/*url('../images/hero-bg.jpg')*/
+
+.section-hero {
+    background: no-repeat center center/cover;
+    /*url('../images/hero-bg.jpg')*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -199,44 +213,48 @@ nav ul a:hover {
     /* border-radius: 20px; */
 }
 
-.section-hero-img{
+.section-hero-img {
     width: 100%;
     height: auto;
 }
 
 /*main-TeamIntro*/
-.main-TeamIntro-LayoutAlign{
+.main-TeamIntro-LayoutAlign {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 10rem;
 }
-.main-TeamIntro-layout{
+
+.main-TeamIntro-layout {
     width: 80%;
     padding: 20px;
     display: flex;
     justify-content: space-between;
 }
-.main-TeamIntro-content{
+
+.main-TeamIntro-content {
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.main-TeamIntro-content h2{
+
+.main-TeamIntro-content h2 {
     font-size: 3rem;
     margin-bottom: 20px;
-    
+
 }
-.main-TeamIntro-content p{
+
+.main-TeamIntro-content p {
     font-size: 1.3rem;
     line-height: 1.6rem;
 }
 
 
 /*main-practice-time*/
-.main-PracTime-LayoutAlign{
+.main-PracTime-LayoutAlign {
     width: 100%;
     height: 700px;
     display: flex;
@@ -244,11 +262,12 @@ nav ul a:hover {
     align-items: center;
     margin-bottom: 10rem;
     background-image: url('../imgs/LOGO介紹背景.svg');
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-.main-PracTime-layout{
+
+.main-PracTime-layout {
     width: 80%;
     padding: 20px;
     display: flex;
@@ -257,22 +276,25 @@ nav ul a:hover {
     flex-direction: row;
 }
 
-.main-PracTime-content{
+.main-PracTime-content {
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
 }
-.main-PracTime-content h2{
+
+.main-PracTime-content h2 {
     font-size: 3rem;
     margin-bottom: 20px;
 }
-.main-PracTime-content p{
+
+.main-PracTime-content p {
     font-size: 1.3rem;
     line-height: 1.6rem;
 }
-.main-PracTime-img{
+
+.main-PracTime-img {
     width: 50%;
 }
 
@@ -290,8 +312,8 @@ nav ul a:hover {
     align-items: flex-start;
 }
 
-.footer-Layout a:hover{
-    color:#8FABD4;
+.footer-Layout a:hover {
+    color: #8FABD4;
 }
 
 .footer-ImgLogo {
@@ -336,6 +358,7 @@ footer .footer-Layout ul li a {
         opacity: 0;
         transform: translateY(20px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -350,46 +373,55 @@ footer .footer-Layout ul li a {
         opacity: 0;
         transform: translateY(20px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0) none;
     }
 }
+
 @keyframes Bar-up2 {
     0% {
         opacity: 0;
         transform: translateY(20px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0) none;
     }
 }
+
 @keyframes Bar-up3 {
     0% {
         opacity: 0;
         transform: translateY(20px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0) none;
     }
 }
+
 @keyframes Bar-up4 {
     0% {
         opacity: 0;
         transform: translateY(20px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0) none;
     }
 }
+
 @keyframes Bar-up5 {
     0% {
         opacity: 0;
         transform: translateY(20px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0) none;
@@ -397,3 +429,504 @@ footer .footer-Layout ul li a {
 }
 
 
+/*RWD*/
+/* ============================================================
+   RWD 擴充：1199px (平板) & 767px (手機)
+   ============================================================ */
+
+/* --- 漢堡選單基礎樣式 --- */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+.menu-toggle .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #FFFFFF;
+    margin: 8px 0;
+    /* 兩根線建議 margin 設大一點 */
+    transition: all 0.3s ease;
+}
+
+/* --- Breakpoint 1: 平板版型 (小於 1200px) --- */
+@media (max-width: 1199px) {
+
+    /* 防止點擊後字體顏色變暗 */
+    nav ul a,
+    nav ul li a,
+    .nav-dropdown-item>a {
+        color: #FFFFFF !important;
+    }
+
+    /* 下拉選單行為修正 */
+    .nav-dropdown-content {
+        display: none !important;
+        position: absolute;
+        width: 100%;
+        background-color: #0d2a4a;
+        align-items: center;
+    }
+
+    .nav-dropdown-item.active .nav-dropdown-content {
+        display: flex !important;
+    }
+
+    .nav-dropdown-content a {
+        text-align: center;
+        padding: 12px 0 !important;
+    }
+
+    /* 1. 調整容器佈局 */
+    .main-PracTime-LayoutAlign {
+        height: auto;
+        /* 平板版型建議高度改為 auto */
+        padding: 80px 0;
+        /* 用上下 padding 撐開高度，比寫死 height 更有彈性 */
+        background-size: cover !important;
+        /* 再次確保填滿 */
+    }
+
+    .main-TeamIntro-layout,
+    .main-PracTime-layout {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* 垂直居中對齊 */
+        gap: 40px;
+        /* 強制給予圖片與文字 40px 的間距，防止重疊 */
+        margin: 0 auto;
+    }
+
+    /* 2. 縮小圖片比例，給文字更多空間 */
+    .main-TeamIntro-img,
+    .main-PracTime-img {
+        width: 40% !important;
+        /* 從 50% 縮小到 40% */
+        flex-shrink: 0;
+        /* 防止圖片被 Flex 擠壓變形 */
+    }
+
+    /* 3. 調整文字比例 */
+    .main-TeamIntro-content,
+    .main-PracTime-content {
+        width: 55% !important;
+        /* 增加文字寬度 */
+    }
+
+    /* 4. 確保圖片不會超出容器 */
+    .main-TeamIntro-img img,
+    .main-PracTime-img img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* 5. 標題字體稍微縮小，避免在平板上換行太難看 */
+    .main-TeamIntro-content h2,
+    .main-PracTime-content h2 {
+        font-size: 2.2rem;
+    }
+
+}
+
+/* --- Breakpoint 2: 手機版型 (小於 768px) --- */
+@media (max-width: 767px) {
+
+    /* 漢堡選單顯示與兩根線動畫 */
+    .menu-toggle {
+        display: flex;
+    }
+
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: translateY(6.5px) rotate(45deg);
+    }
+
+    .menu-toggle.active .bar:nth-child(2) {
+        transform: translateY(-6.5px) rotate(-45deg);
+    }
+
+    /* 導覽列轉為垂直 */
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #163e67;
+        padding: 20px 0;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .nav-list li {
+        font-size: 1.3rem !important;
+        text-align: center;
+    }
+
+    /* 主視覺與標題縮放 */
+    .main-Schedule-Title {
+        font-size: 2.5rem;
+    }
+
+    .main-Title-ColorLayout {
+        height: 30vh;
+    }
+
+    /* 球隊介紹：手機版強制「圖上文下」 */
+    .main-TeamIntro-layout,
+    .main-PracTime-layout {
+        flex-direction: column !important;
+        width: 90%;
+        margin: 0 auto 4rem auto;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .main-TeamIntro-img,
+    .main-PracTime-img {
+        width: 70% !important;
+        order: 1;
+        /* 強制圖片在第一順位 */
+        margin: 0 auto 10px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-TeamIntro-img img,
+    .main-PracTime-img img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .main-TeamIntro-content,
+    .main-PracTime-content {
+        width: 100% !important;
+        order: 2;
+        /* 強制文字在第二順位 */
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .main-TeamIntro-content h2,
+    .main-PracTime-content h2 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    .main-TeamIntro-content p,
+    .main-PracTime-content p {
+        font-size: 1.1rem;
+        line-height: 1.7;
+    }
+
+    /* 修正 LOGO 介紹背景區塊 */
+    .main-PracTime-LayoutAlign {
+        height: auto;
+        padding: 40px 0;
+        background-image: none;
+        /* 移除雜亂背景 */
+        background-color: #edf6ff;
+    }
+
+    /* Footer 垂直堆疊 */
+    .footer-Layout {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 20px;
+        align-items: center;
+    }
+
+    .footer-ImgLogo {
+        width: 200px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .footer-Text1-Layout,
+    .footer-Text2-Layout,
+    .footer-Text3-Layout {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .footer-Layout {
+        height: 1000px;
+        width: 100%;
+        background-color: #163e67;
+        text-align: center;
+        padding: 50px 200px;
+        margin-top: 200px;
+        border-radius: 20px 20px 0 0;
+        display: block;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .footer-Text1-Layout {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .footer-Text2-Layout {
+        text-align: center;
+        display: inline-block;
+        vertical-align: top;
+        margin-bottom: 50px;
+    }
+}
+
+
+/*RWD測試*/
+/* ============================================================
+   RWD 修訂：使用兩個 Breakpoints (1200px / 768px)
+   依照原專案命名原則進行覆蓋
+   ============================================================ */
+
+/* --- Breakpoint 1: 平板版型 (小於 1200px) --- */
+@media (max-width: 1199px) {
+
+    /* 限制整體容器寬度，防止左右貼邊 */
+    /* 1. 之前的容器設定保留... */
+    .container,
+    .wrap {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    nav ul a,
+    nav ul li a,
+    .nav-dropdown-item>a {
+        color: #FFFFFF !important;
+        /* 強制保持白色 */
+        text-decoration: none;
+    }
+
+    /* 2. 在平板/手機版型強制隱藏預設 hover 顯示，改由 JS 控制 active */
+    .nav-dropdown-content {
+        display: none !important;
+        /* 強制隱藏桌機版的 Hover 效果 */
+        position: absolute;
+        background-color: #0d2a4a;
+        width: 100%;
+        min-width: 100px;
+        flex-direction: column;
+        align-items: center;
+        /* 文字對齊 */
+    }
+
+    /* 3. 當有 active 時顯示 */
+    .nav-dropdown-item.active .nav-dropdown-content {
+        display: flex !important;
+    }
+
+    /* 4. 確保文字置中對齊 */
+    .nav-dropdown-content a {
+        text-align: center;
+        color: #FFFFFF !important;
+        padding: 12px 0 !important;
+    }
+
+    /* 5. 箭頭動畫 */
+    .nav-dropdown-item>a:after {
+        display: inline-block;
+        transition: transform 0.3s ease;
+    }
+
+    .nav-dropdown-item.active>a:after {
+        transform: rotate(180deg);
+    }
+}
+
+
+/* --- Breakpoint 2: 手機版型 (小於 768px) --- */
+@media (max-width: 767px) {
+
+    /* 1. 導覽列改為垂直排列 */
+    .header .nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .nav ul li {
+        margin: 5px 0;
+    }
+
+    /* 2. 將原本的橫向 Flex 佈局全部轉為垂直 */
+    .content,
+    .section_box,
+    .footer_container,
+    .flex_grid {
+        /* 根據你專案中實際使用的 class */
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+    /* 3. 調整寬度為全滿 */
+    .left_side,
+    .right_side,
+    .card,
+    .item {
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+
+    /* 4. 字體與間距微調，增加手機閱讀舒適度 */
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .banner {
+        height: auto;
+        /* 讓 Banner 隨圖片高度縮放 */
+        padding: 40px 0;
+    }
+
+    /* 5. 頁腳調整 */
+    .footer {
+        text-align: center;
+    }
+}
+
+/*漢堡選單*/
+/* --- 基礎漢堡按鈕樣式 (預設隱藏) --- */
+.menu-toggle {
+    display: none;
+    /* 桌機隱藏 */
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+.menu-toggle .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #FFFFFF;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+/* --- 修改你的手機斷點區塊 --- */
+@media (max-width: 767px) {
+
+    nav ul a,
+    nav ul li a {
+        color: #FFFFFF !important;
+        text-decoration: none;
+    }
+
+    .nav-dropdown-item>a {
+        color: #FFFFFF !important;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        /* 字與箭頭的距離 */
+        position: relative;
+    }
+
+    /* 2. 如果你希望點擊時還是有回饋，可以只針對 :active (手指按住那一刻) 做變化 */
+    nav ul a:active {
+        color: #8FABD4 !important;
+    }
+
+    .menu-toggle {
+        display: flex;
+        /* 手機顯示 */
+    }
+
+    .nav-list {
+        display: none;
+        /* 預設收起來 */
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        /* 從 Header 下方出現 */
+        left: 0;
+        width: 100%;
+        background-color: #163e67;
+        padding: 20px 0;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* 當點擊後的顯示狀態 */
+    .nav-list.active {
+        display: flex;
+    }
+
+    .nav-list li {
+        width: 100%;
+        text-align: center;
+        font-size: 1.5rem !important;
+        padding: 15px 0;
+    }
+
+    /* 處理下拉選單在手機上的排版 */
+    /* 讓下拉選單在手機版不要「浮動」，而是直接撐開排在下面 */
+    .nav-dropdown-content {
+        display: none !important;
+        position: static;
+        width: 100%;
+        background-color: #0d2a4a;
+        flex-direction: column;
+        align-items: center;
+        /* 讓子元素 (li) 水平置中 */
+        padding: 10px 0;
+        /* 增加一點上下間距比較美觀 */
+    }
+
+    .nav-dropdown-content a {
+        padding: 12px 0 !important;
+        /* 移除之前的 padding-left: 40px */
+        font-size: 1.2rem;
+        width: 100%;
+        /* 讓點擊範圍變大 */
+        text-align: center;
+        /* 文字置中 */
+        color: #FFFFFF !important;
+    }
+
+    /* 當父層被點擊（增加 active 類別）時，展開下拉選單 */
+    .nav-dropdown-item.active .nav-dropdown-content {
+        display: flex !important;
+    }
+
+    /* 移除箭頭的懸停旋轉（可選） */
+    .nav-dropdown-item>a:after {
+        display: inline-block;
+        transition: transform 0.3s;
+        position: absolute;
+        right: 43%;
+        /* 根據你的視覺微調，讓它靠在字旁邊但不影響字置中 */
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .nav-dropdown-item.active>a:after {
+        transform: translateY(-50%) rotate(180deg);
+    }
+
+    /* 漢堡按鈕點擊後的動畫 (X型) */
+
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: translateY(6.5px) rotate(45deg);
+    }
+
+    .menu-toggle.active .bar:nth-child(2) {
+        transform: translateY(-6.5px) rotate(-45deg);
+    }
+}
