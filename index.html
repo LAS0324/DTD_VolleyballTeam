@@ -17,81 +17,146 @@
     <header id="mainHeader">
         <nav>
             <div class="nav-LayoutContainer">
-                <img src="imgs/DTD_VolleyballTeam.png" alt="DTD Logo" class="nav-ImgLogo">
-                <ul>
-                    <li><a href="index.html">首頁</a></li>
-                    <li><a href="OtherPages/Players.html">選手</a></li>
-                    <li><a href="OtherPages/Manager.html">球經</a></li>
-                    <li><a href="OtherPages/Schedule.html">賽程</a></li>
-                </ul>
+                <div class="nav-ContentContainer">
+                    <a href="index.html"><img src="imgs/DTD_LOGO.svg" alt="DTD Logo" class="nav-ImgLogo"></a>
+                    <ul>
+                        <a href="OtherPages/About.html">
+                            <li class="nav-li-width"> 關於數位男排</li>
+                        </a>
+
+                        <a href="OtherPages/Players.html">
+                            <li>選手</li>
+                        </a>
+                        <a href="OtherPages/Manager.html">
+                            <li>球經</li>
+                        </a>
+                        <li class="nav-dropdown-item"> <a href="OtherPages/Schedule.html">賽程</a>
+                            <ul class="nav-dropdown-content">
+                                <li><a href="OtherPages/Schedule.html">本季賽事</a></li>
+                                <li><a href="OtherPages/Data.html">比賽數據</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
-    <section class="section-slogan">
-        <h1 class="section-slogan-Title"><a name="slogan">ALL WITH LOVE</a></h1>
-        <p class="section-slogan-Subtitle">DTD數位男排</p>
-    </section>
+    <div class="main-Title-ColorLayout">
+        <div class="main-Title-layout">
+            <h1 class="main-Schedule-Title"><a name="schedule">關於數位男排</a></h1>
+        </div>
+    </div>
     <section class="section-hero">
-        <img src="imgs/DTD男排主視覺 (1350 x 900 像素).png" alt="Hero Image" class="section-hero-img">
+        <img src="imgs/DTD男排主視覺 (1350 x 900 像素).svg" alt="Hero Image" class="section-hero-img">
     </section>
     <div class="container">
         <main>
-            <section class="section-TeamIntro">
-                <div class="section-Title1-Layout">
-                    <h2 class="section-Title1">球隊介紹</h2>
-                </div>
-                <div class="section-Text1-Layout">
-                    <div class="section-Competitive-Background">
-                        <p class="section-TeamIntro-Competitive">
-                            競技組
-                        </p>
-                        <div class="Title2-line"></div>
-                        <ul>
-                            <li>訓練目標:主要著重於團隊配合、技術訓練和體能強化，以應對校內外的正式賽事。</li>
-                            <li>出席要求： 為了團隊的默契和比賽表現，競技組的夥伴原則上需要盡量出席每次的練習（當然，有事請假是可以的）。</li>
-                        </ul>
+            <div class="main-Title1-layout">
+                <h2 class="main-Title1">最新消息</h2>
+            </div>
+            <!-- <div class="main-news-layout">
+                <img src="imgs/新聞封面/最新消息新聞封面.svg" alt="最新消息圖片" class="main-mews-img">
+            </div>-->
+            <div class="main-SwiperContainer-layout" id="carouselContainer">
+
+                <div class="main-SwiperSlide-layout" id="carouselTrack">
+
+                    <div class="main-swiper-slide clone" data-index="3">
+                        
+                        <img src="imgs/新聞封面/NEWSslide3封面(彥德).svg" class="main-swiper-slide-img4">
                     </div>
-                    <div class="section-Leisure-Background">
-                        <p class="section-TeamIntro-Leisure">
-                            休閒組
-                        </p>
-                        <div class="Title2-line"></div>
-                        <ul class="section-TeamIntro-Leisure-Item">
-                            <li>活動目標： 以輕鬆打球、活動筋骨、交朋友為主。</li>
-                            <li>出席方式： 這裡沒有壓力！完全自由，想來就來，不用請假，非常輕鬆。</li>
-                        </ul>
+                    <div class="main-swiper-slide clone" data-index="4">
+                        <img src="imgs/新聞封面/NEWSslide4封面(毅安).svg" class="main-swiper-slide-img5">
                     </div>
-                </div>
-            </section>
-            <section class="section-PracTime">
-                <div class="section-Title1-Layout">
-                    <h2 class="section-Title1">練習時間</h2>
-                </div>
-                <div class="section-Text2-Layout">
-                    <div class="section-PracTime-Background">
-                        <p class="section-PracTime-Week">
-                            星期二:18:30 - 20:30
-                        </p>
+
+                    <div class="main-swiper-slide original" data-index="0">
+                        <div class="main-swiper-item">
+                            <img src="imgs/新聞封面/NEWSslide0封面(修逸).svg" class="main-swiper-slide-img1">
+                            <div class="main-swiper-content">
+                                <h3 class="slide-title">呂修逸學長投下震撼彈決定再戰一年!</h3>
+                                <div class="slide-description">
+                                    <p>原本</p>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="section-PracTime-Background">
-                        <p class="section-PracTime-Week">
-                            星期五:20:30 - 22:30
-                        </p>
+                    <div class="main-swiper-slide original" data-index="1">
+                        <div class="main-swiper-item">
+                            <img src="imgs/新聞封面/NEWSslide1封面(致緯).svg" class="main-swiper-slide-img2">
+                            <div class="main-swiper-content">
+                                <h3 class="slide-title">Slide 標題1</h3>
+                                <div class="slide-description">
+                                    <p>這是一段關於 Slide 標題一 的簡短描述文字，會在滑鼠懸停時顯示。</p>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
+                    <div class="main-swiper-slide original" data-index="2">
+                        <div class="main-swiper-item">
+                            <img src="imgs/新聞封面/NEWSslide2封面(紘翔).svg" class="main-swiper-slide-img1">
+
+                            <div class="main-swiper-content">
+                                <h3 class="slide-title">Slide 標題2</h3>
+                                <div class="slide-description">
+                                    <p>這是一段關於 Slide 標題一 的簡短描述文字，會在滑鼠懸停時顯示。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-swiper-slide original" data-index="3">
+                        <div class="main-swiper-item">
+                            <img src="imgs/新聞封面/NEWSslide3封面(彥德).svg" class="main-swiper-slide-img4">
+                            <div class="main-swiper-content">
+                                <h3 class="slide-title">Slide 標題3</h3>
+                                <div class="slide-description">
+                                    <p>這是一段關於 Slide 標題一 的簡短描述文字，會在滑鼠懸停時顯示。</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="main-swiper-slide original" data-index="4">
+                        <div class="main-swiper-item">
+                            <img src="imgs/新聞封面/NEWSslide4封面(毅安).svg" class="main-swiper-slide-img5">
+                            <div class="main-swiper-content">
+                                <h3 class="slide-title">Slide 標題4</h3>
+                                <div class="slide-description">
+                                    <p>這是一段關於 Slide 標題一 的簡短描述文字，會在滑鼠懸停時顯示。</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="main-swiper-slide clone" data-index="0">
+                        <img src="imgs/新聞封面/NEWSslide0封面(修逸).svg" class="main-swiper-slide-img1">
+                    </div>
+                    <div class="main-swiper-slide clone" data-index="1">
+                        <div class="main-swiper-item">
+                            <img src="imgs/新聞封面/NEWSslide1封面(致緯).svg" class="main-swiper-slide-img2">
+                        </div>
+                    </div>
+
                 </div>
-            </section>
+
+                <div class="main-swiper-PreButton" id="prevBtn">←</div>
+                <div class="main-swiper-NextButton" id="nextBtn">→</div>
+
+                <div class="main-swiper-Page" id="paginationContainer"></div>
+            </div>
         </main>
     </div>
     <footer>
         <div class="footer-Layout">
-            <img src="imgs/DTD_VolleyballTeam.png" alt="DTD Logo" class="footer-ImgLogo">
+            <img src="imgs/DTD_LOGO.svg" alt="DTD Logo" class="footer-ImgLogo">
             <div class="footer-Text1-Layout">
-                <p class="footer-Title1">關於數位男排</p>
+                <p class="footer-Title1">關於我們</p>
                 <ul>
-                    <li><a href="#slogan">球隊標語</a></li>
                     <li><a href="OtherPages/Players.html">球隊選手</a></li>
                     <li><a href="OtherPages/Manager.html">球隊經理</a></li>
-                    <li><a href="OtherPages/Schedule.html">數位系賽程</a></li>
+                    <li><a href="OtherPages/Schedule.html">數位男排賽程</a></li>
                 </ul>
             </div>
             <div class="footer-Text2-Layout">
@@ -111,7 +176,55 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="js/Home.js"></script>
 </body>
 
 </html>
+
+
+<!--<section class="section-TeamIntro">
+    <div class="section-Title1-Layout">
+        <h2 class="section-Title1">球隊介紹</h2>
+    </div>
+    <div class="section-Text1-Layout">
+        <div class="section-Competitive-Background">
+            <p class="section-TeamIntro-Competitive">
+                競技組
+            </p>
+            <div class="Title2-line"></div>
+            <ul>
+                <li>訓練目標:主要著重於團隊配合、技術訓練和體能強化，以應對校內外的正式賽事。</li>
+                <li>出席要求： 為了團隊的默契和比賽表現，競技組的夥伴原則上需要盡量出席每次的練習（當然，有事請假是可以的）。</li>
+            </ul>
+        </div>
+        <div class="section-Leisure-Background">
+            <p class="section-TeamIntro-Leisure">
+                休閒組
+            </p>
+            <div class="Title2-line"></div>
+            <ul class="section-TeamIntro-Leisure-Item">
+                <li>活動目標： 以輕鬆打球、活動筋骨、交朋友為主。</li>
+                <li>出席方式： 這裡沒有壓力！完全自由，想來就來，不用請假，非常輕鬆。</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="section-PracTime">
+    <div class="section-Title1-Layout">
+        <h2 class="section-Title1">練習時間</h2>
+    </div>
+    <div class="section-Text2-Layout">
+        <div class="section-PracTime-Background">
+            <p class="section-PracTime-Week">
+                星期二:18:30 - 20:30
+            </p>
+        </div>
+        <div class="section-PracTime-Background">
+            <p class="section-PracTime-Week">
+                星期五:20:30 - 22:30
+            </p>
+        </div>
+    </div>
+</section>-->
