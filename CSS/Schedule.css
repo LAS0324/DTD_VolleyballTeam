@@ -458,11 +458,6 @@ footer .footer-Layout ul li a {
 }
 
 
-/* ============================================================
-   RWD 擴充：1199px (平板) & 767px (手機)
-   ============================================================ */
-
-/* 基礎漢堡按鈕 */
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -478,14 +473,12 @@ footer .footer-Layout ul li a {
     transition: 0.3s;
 }
 
-/* --- Breakpoint 1: 平板 (小於 1200px) --- */
 @media (max-width: 1199px) {
 
     nav ul a,
     nav ul li a,
     .nav-dropdown-item>a {
         color: #FFFFFF !important;
-        /* 確保不變暗 */
     }
 
     .nav-dropdown-content {
@@ -505,7 +498,6 @@ footer .footer-Layout ul li a {
         padding: 12px 0 !important;
     }
 
-    /* 調整賽程容器寬度 */
     .container {
         width: 90%;
     }
@@ -513,14 +505,9 @@ footer .footer-Layout ul li a {
     .main-Schedule-TitleLayout-space {
         width: 100px;
     }
-
-    /* 縮小裝飾空間避免擠壓 */
 }
 
-/* --- Breakpoint 2: 手機 (小於 768px) --- */
 @media (max-width: 767px) {
-
-    /* 1. 漢堡動畫與導覽列 */
     .menu-toggle {
         display: flex;
     }
@@ -556,7 +543,6 @@ footer .footer-Layout ul li a {
         color: #FFFFFF !important;
     }
 
-    /* 文字中心對齊修正 (三角形絕對定位) */
     .nav-dropdown-item>a {
         position: relative;
         display: block;
@@ -565,33 +551,27 @@ footer .footer-Layout ul li a {
 
     .nav-dropdown-item>a:after {
         position: absolute;
-        right: 43%;
+        right: 40%;
         top: 50%;
         transform: translateY(-50%);
     }
 
-    /* 2. 賽程卡片重組 (核心 RWD) */
     .main-Schedule-background {
         height: auto;
-        /* 高度隨內容撐開 */
         padding-bottom: 20px;
     }
 
     .main-Schedule-TitleLayout {
         padding: 0 20px;
         justify-content: center;
-        /* 標題置中 */
     }
 
     .main-Schedule-TitleLayout-space {
         display: none;
     }
 
-    /* 手機版隱藏多餘空間 */
-
     .main-Schedule-InfoLayout {
         flex-direction: column;
-        /* 垂直排列 */
         gap: 20px;
         padding: 20px;
     }
@@ -607,7 +587,6 @@ footer .footer-Layout ul li a {
         height: auto;
     }
 
-    /* 3. 頁面大標題縮放 */
     .main-Schedule-Title {
         font-size: 2.5rem;
     }
@@ -617,7 +596,6 @@ footer .footer-Layout ul li a {
         margin-bottom: 4rem;
     }
 
-    /* 4. Footer 垂直化 */
     .footer-Layout {
         flex-direction: column;
         height: auto;
@@ -661,5 +639,24 @@ footer .footer-Layout ul li a {
         display: inline-block;
         vertical-align: top;
         margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 430px) {
+    .main-Schedule-InfoLayout {
+        padding: 15px !important;
+    }
+
+    .main-Schedule-TimeArea h2,
+    .main-Schedule-VSarea h2 {
+        font-size: 1.5rem !important;
+    }
+
+    .main-Schedule-VSresult h3 {
+        font-size: 1.1rem !important;
+    }
+
+    .main-Schedule-TitleLayout h3 {
+        font-size: 1.4rem !important;
     }
 }

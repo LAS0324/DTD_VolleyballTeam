@@ -12,16 +12,16 @@ window.addEventListener("scroll", function () {
 
 
 
-gsap.from(".main-news-layout, .main-Title1-layout", {
+gsap.from(".main-SwiperContainer-layout, .main-Title1-layout", {
     duration: 1,
     y: 50,
     opacity: 0,
     stagger: 0.3,
     scrollTrigger: {
         
-        trigger: ".main-news-layout",
+        trigger: ".main-Title1-layout ,.main-SwiperContainer-layout",
         start: "top 80%",
-        toggleActions: "play none none none",
+        toggleActions: "play none none reverse",
     }
 
 });
@@ -150,6 +150,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     
-
-    // --- 原有的輪播器代碼 ... ---
 });

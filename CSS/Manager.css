@@ -410,11 +410,6 @@ footer .footer-Layout ul li a {
     }
 }
 
-/* ============================================================
-   RWD 擴充：1199px (平板) & 767px (手機)
-   ============================================================ */
-
-/* 漢堡按鈕基礎 */
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -430,14 +425,11 @@ footer .footer-Layout ul li a {
     transition: 0.3s;
 }
 
-/* --- Breakpoint 1: 平板 (小於 1200px) --- */
 @media (max-width: 1199px) {
-
     nav ul a,
     nav ul li a,
     .nav-dropdown-item>a {
         color: #FFFFFF !important;
-        /* 防止變暗 */
     }
 
     .nav-dropdown-content {
@@ -457,17 +449,13 @@ footer .footer-Layout ul li a {
         padding: 12px 0 !important;
     }
 
-    /* 網格切換為 2 欄 */
     .main-photo-GridLayout {
         grid-template-columns: repeat(2, 1fr) !important;
         margin-top: 50px;
     }
 }
 
-/* --- Breakpoint 2: 手機 (小於 768px) --- */
 @media (max-width: 767px) {
-
-    /* 1. 漢堡選單動畫 (修正為 11px 位移達成正叉叉) */
     .menu-toggle {
         display: flex;
     }
@@ -480,7 +468,6 @@ footer .footer-Layout ul li a {
         transform: translateY(-9px) rotate(-45deg);
     }
 
-    /* 2. 導覽列文字垂直對齊與不變暗 */
     .nav-list {
         display: none;
         flex-direction: column;
@@ -504,7 +491,6 @@ footer .footer-Layout ul li a {
         color: #FFFFFF !important;
     }
 
-    /* 修正賽程文字中心對齊 (三角形絕對定位) */
     .nav-dropdown-item>a {
         position: relative;
         display: block;
@@ -514,8 +500,7 @@ footer .footer-Layout ul li a {
 
     .nav-dropdown-item>a:after {
         position: absolute;
-        right: 43%;
-        /* 依照選手頁成功數值 */
+        right: 40%;
         top: 50%;
         transform: translateY(-50%);
     }
@@ -524,7 +509,6 @@ footer .footer-Layout ul li a {
         transform: translateY(-50%) rotate(180deg);
     }
 
-    /* 3. 網格切換為 1 欄 */
     .main-photo-GridLayout {
         grid-template-columns: 1fr !important;
         width: 90%;
@@ -536,7 +520,6 @@ footer .footer-Layout ul li a {
         height: 380px;
     }
 
-    /* 4. 標題縮放 */
     .main-Schedule-Title {
         font-size: 2.5rem;
     }
@@ -546,7 +529,6 @@ footer .footer-Layout ul li a {
         margin-bottom: 4rem;
     }
 
-    /* 5. Footer 垂直化 */
     .footer-Layout {
         flex-direction: column;
         height: auto;
@@ -590,5 +572,17 @@ footer .footer-Layout ul li a {
         display: inline-block;
         vertical-align: top;
         margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 430px) {
+    .main-photo {
+        width: 90% !important;
+        height: auto;
+        aspect-ratio: 3 / 4;
+    }
+    
+    .main-photo-name, .main-photo-CapName {
+        font-size: 1.4rem !important;
     }
 }

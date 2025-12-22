@@ -686,16 +686,8 @@ footer .footer-Layout ul li a {
 
 
 /*RWD測試*/
-/* ============================================================
-   RWD 修訂：使用兩個 Breakpoints (1200px / 768px)
-   依照原專案命名原則進行覆蓋
-   ============================================================ */
-
-/* --- Breakpoint 1: 平板版型 (小於 1200px) --- */
 @media (max-width: 1199px) {
 
-    /* 限制整體容器寬度，防止左右貼邊 */
-    /* 1. 之前的容器設定保留... */
     .container,
     .wrap {
         width: 100%;
@@ -706,36 +698,29 @@ footer .footer-Layout ul li a {
     nav ul li a,
     .nav-dropdown-item>a {
         color: #FFFFFF !important;
-        /* 強制保持白色 */
         text-decoration: none;
     }
 
-    /* 2. 在平板/手機版型強制隱藏預設 hover 顯示，改由 JS 控制 active */
     .nav-dropdown-content {
         display: none !important;
-        /* 強制隱藏桌機版的 Hover 效果 */
         position: absolute;
         background-color: #0d2a4a;
         width: 100%;
         min-width: 100px;
         flex-direction: column;
         align-items: center;
-        /* 文字對齊 */
     }
 
-    /* 3. 當有 active 時顯示 */
     .nav-dropdown-item.active .nav-dropdown-content {
         display: flex !important;
     }
 
-    /* 4. 確保文字置中對齊 */
     .nav-dropdown-content a {
         text-align: center;
         color: #FFFFFF !important;
         padding: 12px 0 !important;
     }
 
-    /* 5. 箭頭動畫 */
     .nav-dropdown-item>a:after {
         display: inline-block;
         transition: transform 0.3s ease;
@@ -746,11 +731,7 @@ footer .footer-Layout ul li a {
     }
 }
 
-
-/* --- Breakpoint 2: 手機版型 (小於 768px) --- */
 @media (max-width: 767px) {
-
-    /* 1. 導覽列改為垂直排列 */
     .header .nav ul {
         flex-direction: column;
         align-items: center;
@@ -761,17 +742,14 @@ footer .footer-Layout ul li a {
         margin: 5px 0;
     }
 
-    /* 2. 將原本的橫向 Flex 佈局全部轉為垂直 */
     .content,
     .section_box,
     .footer_container,
     .flex_grid {
-        /* 根據你專案中實際使用的 class */
         flex-direction: column !important;
         align-items: center;
     }
 
-    /* 3. 調整寬度為全滿 */
     .left_side,
     .right_side,
     .card,
@@ -780,7 +758,6 @@ footer .footer-Layout ul li a {
         margin-bottom: 20px;
     }
 
-    /* 4. 字體與間距微調，增加手機閱讀舒適度 */
     h1 {
         font-size: 24px;
     }
@@ -791,21 +768,16 @@ footer .footer-Layout ul li a {
 
     .banner {
         height: auto;
-        /* 讓 Banner 隨圖片高度縮放 */
         padding: 40px 0;
     }
 
-    /* 5. 頁腳調整 */
     .footer {
         text-align: center;
     }
 }
 
-/*漢堡選單*/
-/* --- 基礎漢堡按鈕樣式 (預設隱藏) --- */
 .menu-toggle {
     display: none;
-    /* 桌機隱藏 */
     flex-direction: column;
     cursor: pointer;
     z-index: 1100;
@@ -819,7 +791,6 @@ footer .footer-Layout ul li a {
     transition: all 0.3s ease;
 }
 
-/* --- 修改你的手機斷點區塊 --- */
 @media (max-width: 767px) {
 
     nav ul a,
@@ -835,27 +806,22 @@ footer .footer-Layout ul li a {
         justify-content: center;
         align-items: center;
         gap: 5px;
-        /* 字與箭頭的距離 */
         position: relative;
     }
 
-    /* 2. 如果你希望點擊時還是有回饋，可以只針對 :active (手指按住那一刻) 做變化 */
     nav ul a:active {
         color: #8FABD4 !important;
     }
 
     .menu-toggle {
         display: flex;
-        /* 手機顯示 */
     }
 
     .nav-list {
         display: none;
-        /* 預設收起來 */
         flex-direction: column;
         position: absolute;
         top: 100%;
-        /* 從 Header 下方出現 */
         left: 0;
         width: 100%;
         background-color: #163e67;
@@ -863,7 +829,6 @@ footer .footer-Layout ul li a {
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     }
 
-    /* 當點擊後的顯示狀態 */
     .nav-list.active {
         display: flex;
     }
@@ -875,8 +840,6 @@ footer .footer-Layout ul li a {
         padding: 15px 0;
     }
 
-    /* 處理下拉選單在手機上的排版 */
-    /* 讓下拉選單在手機版不要「浮動」，而是直接撐開排在下面 */
     .nav-dropdown-content {
         display: none !important;
         position: static;
@@ -884,34 +847,26 @@ footer .footer-Layout ul li a {
         background-color: #0d2a4a;
         flex-direction: column;
         align-items: center;
-        /* 讓子元素 (li) 水平置中 */
         padding: 10px 0;
-        /* 增加一點上下間距比較美觀 */
     }
 
     .nav-dropdown-content a {
         padding: 12px 0 !important;
-        /* 移除之前的 padding-left: 40px */
         font-size: 1.2rem;
         width: 100%;
-        /* 讓點擊範圍變大 */
         text-align: center;
-        /* 文字置中 */
         color: #FFFFFF !important;
     }
 
-    /* 當父層被點擊（增加 active 類別）時，展開下拉選單 */
     .nav-dropdown-item.active .nav-dropdown-content {
         display: flex !important;
     }
 
-    /* 移除箭頭的懸停旋轉（可選） */
     .nav-dropdown-item>a:after {
         display: inline-block;
         transition: transform 0.3s;
         position: absolute;
-        right: 43%;
-        /* 根據你的視覺微調，讓它靠在字旁邊但不影響字置中 */
+        right: 40%;
         top: 50%;
         transform: translateY(-50%);
     }
@@ -920,13 +875,31 @@ footer .footer-Layout ul li a {
         transform: translateY(-50%) rotate(180deg);
     }
 
-    /* 漢堡按鈕點擊後的動畫 (X型) */
-
     .menu-toggle.active .bar:nth-child(1) {
         transform: translateY(6.5px) rotate(45deg);
     }
 
     .menu-toggle.active .bar:nth-child(2) {
         transform: translateY(-6.5px) rotate(-45deg);
+    }
+}
+
+@media (max-width: 430px) {
+
+    .main-TeamIntro-img,
+    .main-PracTime-img {
+        width: 85% !important;
+        margin-bottom: 15px;
+    }
+
+    .main-TeamIntro-content h2,
+    .main-PracTime-content h2 {
+        font-size: 1.5rem !important;
+    }
+
+    .main-TeamIntro-content p,
+    .main-PracTime-content p {
+        font-size: 1rem !important;
+        line-height: 1.5;
     }
 }
