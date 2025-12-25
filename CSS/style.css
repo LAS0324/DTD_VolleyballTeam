@@ -168,6 +168,10 @@ nav ul a:hover {
     font-size: 1.3rem;
 }
 
+.nav-shrink .nav-dropdown-content li {
+    font-size: 0.8rem;
+}
+
 /* Main */
 .main-Title-ColorLayout {
     height: 40vh;
